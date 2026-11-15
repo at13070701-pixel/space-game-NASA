@@ -1,0 +1,200 @@
+[gd_scene format=3 uid="uid://boi58ygjyqfrg"]
+
+[ext_resource type="Script" uid="uid://bq8150um7tw3p" path="res://node_2d.gd" id="1_ta5nu"]
+[ext_resource type="Texture2D" uid="uid://cdvyk1u07kxgm" path="res://Materialnasa/panel minijuego.png" id="2_flf07"]
+[ext_resource type="Texture2D" uid="uid://bhwtpvmwbp704" path="res://Materialnasa/Panel de control espacial retro pixel art.png" id="3_k73cj"]
+[ext_resource type="Script" uid="uid://dq7m6d0vdsytq" path="res://texture_rect.gd" id="4_rj586"]
+[ext_resource type="Texture2D" uid="uid://bmkpf15mt82fx" path="res://Materialnasa/3_sin_fondo.png" id="5_rjqkl"]
+[ext_resource type="Script" uid="uid://1a4kqxet1yj1" path="res://texture_rect_2.gd" id="6_ir8iy"]
+[ext_resource type="Texture2D" uid="uid://b35ewubi22dpl" path="res://Materialnasa/4_sin fodo.png" id="7_fs4d3"]
+[ext_resource type="Script" uid="uid://cwd8q5eksmbqv" path="res://texture_rect_3.gd" id="8_hqns4"]
+[ext_resource type="Texture2D" uid="uid://c3p62aidayir7" path="res://Materialnasa/5(1)_sin_fondo.png" id="9_7vxoj"]
+[ext_resource type="Script" uid="uid://htmxv8k5ncx5" path="res://texture_rect_4.gd" id="10_x0ka3"]
+[ext_resource type="Texture2D" uid="uid://coe718pd8fqem" path="res://Materialnasa/1794694327574.png(1)_sin_fondo.png" id="11_ei405"]
+[ext_resource type="Texture2D" uid="uid://ba3b3g33pfo34" path="res://Materialnasa/Botón pixelado verde «COMPROBAR».webp" id="13_d2bti"]
+[ext_resource type="Texture2D" uid="uid://dm5m4dfct7kv0" path="res://Materialnasa/Botón pixelado verde «COMPROBAR» (1).webp" id="14_ta5nu"]
+[ext_resource type="Texture2D" uid="uid://dgxle622p1prf" path="res://Materialnasa/Botón pixelado verde «COMPROBAR» (2).webp" id="15_flf07"]
+[ext_resource type="Texture2D" uid="uid://l1vagqaf8n0y" path="res://Materialnasa/succes.png" id="16_ta5nu"]
+[ext_resource type="Texture2D" uid="uid://behucsbrd6yep" path="res://Materialnasa/failure.png" id="17_flf07"]
+
+[sub_resource type="GDScript" id="GDScript_x0ka3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_meq13"]
+size = Vector2(238.5, 167)
+
+[sub_resource type="GDScript" id="GDScript_0h7mo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ppgkl"]
+size = Vector2(242.0625, 158.5625)
+
+[sub_resource type="GDScript" id="GDScript_nr8wp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t2ywm"]
+size = Vector2(249.125, 157.625)
+
+[sub_resource type="GDScript" id="GDScript_d2bti"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ysocp"]
+size = Vector2(240.5625, 167.3125)
+
+[node name="Node2D" type="Node2D" unique_id=1849836990]
+script = ExtResource("1_ta5nu")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1035059192]
+top_level = true
+texture_filter = 1
+offset_left = 824.0
+offset_top = 64.0
+offset_right = 1088.0
+offset_bottom = 248.0
+mouse_filter = 0
+texture = ExtResource("5_rjqkl")
+expand_mode = 1
+script = ExtResource("4_rj586")
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=365772336]
+top_level = true
+texture_filter = 1
+offset_left = 800.0
+offset_top = 176.0
+offset_right = 1088.0
+offset_bottom = 376.0
+texture = ExtResource("7_fs4d3")
+expand_mode = 1
+script = ExtResource("6_ir8iy")
+
+[node name="TextureRect3" type="TextureRect" parent="." unique_id=908163265]
+top_level = true
+texture_filter = 1
+offset_left = 808.0
+offset_top = 312.0
+offset_right = 1080.0
+offset_bottom = 488.0
+texture = ExtResource("9_7vxoj")
+expand_mode = 1
+script = ExtResource("8_hqns4")
+
+[node name="TextureRect4" type="TextureRect" parent="." unique_id=323905833]
+top_level = true
+texture_filter = 1
+offset_left = 808.0
+offset_top = 432.0
+offset_right = 1080.0
+offset_bottom = 624.0
+texture = ExtResource("11_ei405")
+expand_mode = 1
+script = ExtResource("10_x0ka3")
+
+[node name="fondojuego" type="TextureRect" parent="." unique_id=782837436]
+offset_left = -56.0
+offset_top = -48.0
+offset_right = 1216.0
+offset_bottom = 680.0
+texture = ExtResource("2_flf07")
+metadata/_edit_lock_ = true
+
+[node name="fondo" type="Sprite2D" parent="." unique_id=1294804356]
+position = Vector2(440, 312)
+scale = Vector2(0.47732678, 0.4669349)
+texture = ExtResource("3_k73cj")
+metadata/_edit_lock_ = true
+
+[node name="pieza3" type="Area2D" parent="." unique_id=1629353878]
+position = Vector2(7.999939, 8)
+script = SubResource("GDScript_x0ka3")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="pieza3" unique_id=779329740]
+show_behind_parent = true
+position = Vector2(944, 144)
+shape = SubResource("RectangleShape2D_meq13")
+debug_color = Color(0, 0.6, 0.69803923, 0)
+metadata/_edit_lock_ = true
+
+[node name="destino3" type="Area2D" parent="." unique_id=300595914]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="destino3" unique_id=742010916]
+position = Vector2(304.75, 395.5)
+shape = SubResource("RectangleShape2D_meq13")
+debug_color = Color(0, 0.6, 0.69803923, 0)
+
+[node name="pieza2" type="Area2D" parent="." unique_id=845537164]
+script = SubResource("GDScript_0h7mo")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="pieza2" unique_id=2545100]
+position = Vector2(944, 272)
+shape = SubResource("RectangleShape2D_ppgkl")
+debug_color = Color(0, 0.6, 0.69803923, 0)
+
+[node name="destino2" type="Area2D" parent="." unique_id=883950087]
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="destino2" unique_id=1823089249]
+position = Vector2(302.96875, 207.28125)
+shape = SubResource("RectangleShape2D_ppgkl")
+debug_color = Color(0, 0.6, 0.69803923, 0)
+metadata/_edit_lock_ = true
+
+[node name="pieza1" type="Area2D" parent="." unique_id=1718435894]
+script = SubResource("GDScript_nr8wp")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="pieza1" unique_id=1766303351]
+position = Vector2(944, 400)
+shape = SubResource("RectangleShape2D_t2ywm")
+debug_color = Color(0, 0.6, 0.69803923, 0)
+
+[node name="destino1" type="Area2D" parent="." unique_id=2140809888]
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="destino1" unique_id=815347960]
+position = Vector2(579.4375, 206.8125)
+shape = SubResource("RectangleShape2D_t2ywm")
+debug_color = Color(0, 0.6, 0.69803923, 0)
+metadata/_edit_lock_ = true
+
+[node name="pieza4" type="Area2D" parent="." unique_id=2125789303]
+position = Vector2(168, 80)
+script = SubResource("GDScript_d2bti")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="pieza4" unique_id=636124795]
+position = Vector2(776, 448)
+shape = SubResource("RectangleShape2D_ysocp")
+debug_color = Color(0, 0.6, 0.69803923, 0)
+
+[node name="destino4" type="Area2D" parent="." unique_id=413647754]
+position = Vector2(168, 80)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="destino4" unique_id=352460071]
+position = Vector2(407.71875, 315.65625)
+shape = SubResource("RectangleShape2D_ysocp")
+debug_color = Color(0, 0.6, 0.69803923, 0)
+metadata/_edit_lock_ = true
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=1327028073]
+offset_left = 368.0
+offset_top = 544.0
+offset_right = 544.0
+offset_bottom = 610.0
+texture_normal = ExtResource("13_d2bti")
+texture_pressed = ExtResource("14_ta5nu")
+texture_hover = ExtResource("15_flf07")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="Canva" type="TextureRect" parent="." unique_id=584273691]
+visible = false
+offset_left = -40.0
+offset_top = 136.0
+offset_right = 1200.0
+offset_bottom = 488.0
+texture = ExtResource("16_ta5nu")
+expand_mode = 1
+
+[node name="CanvaF" type="TextureRect" parent="." unique_id=570908564]
+visible = false
+top_level = true
+offset_left = -32.0
+offset_top = 112.0
+offset_right = 1184.0
+offset_bottom = 504.0
+texture = ExtResource("17_flf07")
+expand_mode = 1
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]

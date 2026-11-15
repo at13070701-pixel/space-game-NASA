@@ -1,0 +1,171 @@
+[gd_scene format=3 uid="uid://bwlf8212m77ke"]
+
+[ext_resource type="Script" uid="uid://hkicp43rhufe" path="res://Piezas/piezas.gd" id="1_0njje"]
+[ext_resource type="Texture2D" uid="uid://bmkpf15mt82fx" path="res://Materialnasa/3_sin_fondo.png" id="1_t82re"]
+[ext_resource type="Texture2D" uid="uid://b35ewubi22dpl" path="res://Materialnasa/4_sin fodo.png" id="2_0njje"]
+[ext_resource type="Texture2D" uid="uid://c3p62aidayir7" path="res://Materialnasa/5(1)_sin_fondo.png" id="3_rpv7a"]
+[ext_resource type="Texture2D" uid="uid://coe718pd8fqem" path="res://Materialnasa/1794694327574.png(1)_sin_fondo.png" id="4_3d18g"]
+[ext_resource type="Texture2D" uid="uid://l1vagqaf8n0y" path="res://Materialnasa/succes.png" id="6_h820a"]
+[ext_resource type="Texture2D" uid="uid://behucsbrd6yep" path="res://Materialnasa/failure.png" id="7_tskot"]
+[ext_resource type="Texture2D" uid="uid://dgxle622p1prf" path="res://Materialnasa/Botón pixelado verde «COMPROBAR» (2).webp" id="8_leaul"]
+[ext_resource type="Texture2D" uid="uid://dm5m4dfct7kv0" path="res://Materialnasa/Botón pixelado verde «COMPROBAR» (1).webp" id="9_n8hva"]
+[ext_resource type="Texture2D" uid="uid://ba3b3g33pfo34" path="res://Materialnasa/Botón pixelado verde «COMPROBAR».webp" id="10_6f0no"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ysocp"]
+size = Vector2(177, 129)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p0udw"]
+size = Vector2(189, 133)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2n37y"]
+size = Vector2(193, 129)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_meq13"]
+size = Vector2(197, 141)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_83ytx"]
+size = Vector2(1162, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ps1la"]
+size = Vector2(1152, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6aewd"]
+size = Vector2(20, 658)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u2i7p"]
+size = Vector2(20, 650)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t2ywm"]
+size = Vector2(184.5, 128.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0njje"]
+size = Vector2(185, 129)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rpv7a"]
+size = Vector2(181, 129)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3d18g"]
+size = Vector2(181, 125)
+
+[node name="Piezas" type="CharacterBody2D" unique_id=22644040]
+top_level = true
+up_direction = Vector2(0.9999995, -0.0009999995)
+script = ExtResource("1_0njje")
+
+[node name="CSimagen1" type="CollisionShape2D" parent="." unique_id=932723101]
+position = Vector2(1000, 128)
+shape = SubResource("RectangleShape2D_ysocp")
+
+[node name="imagen1" type="Sprite2D" parent="CSimagen1" unique_id=1543011250]
+scale = Vector2(0.1953125, 0.13476564)
+texture = ExtResource("1_t82re")
+
+[node name="CSimagen2" type="CollisionShape2D" parent="." unique_id=499118540]
+position = Vector2(1001.5, 309.5)
+shape = SubResource("RectangleShape2D_p0udw")
+
+[node name="imagen2" type="Sprite2D" parent="CSimagen2" unique_id=1024782009]
+position = Vector2(-1.500061, 2.5)
+scale = Vector2(0.1814971, 0.12972814)
+texture = ExtResource("2_0njje")
+
+[node name="CSimagen3" type="CollisionShape2D" parent="." unique_id=22843698]
+position = Vector2(135.5, 543.5)
+shape = SubResource("RectangleShape2D_2n37y")
+
+[node name="imagen3" type="Sprite2D" parent="CSimagen3" unique_id=1403577203]
+position = Vector2(0.5, 0.5)
+scale = Vector2(0.2109375, 0.14843749)
+texture = ExtResource("3_rpv7a")
+
+[node name="CSimagen4" type="CollisionShape2D" parent="." unique_id=167115660]
+position = Vector2(136, 384)
+shape = SubResource("RectangleShape2D_meq13")
+
+[node name="imagen4" type="Sprite2D" parent="CSimagen4" unique_id=528501145]
+position = Vector2(1.5258789e-05, 0)
+scale = Vector2(0.10546874, 0.07812499)
+texture = ExtResource("4_3d18g")
+
+[node name="TopWall" type="StaticBody2D" parent="." unique_id=1216147212]
+
+[node name="Top" type="CollisionShape2D" parent="TopWall" unique_id=1703208602]
+visible = false
+position = Vector2(571, 0)
+shape = SubResource("RectangleShape2D_83ytx")
+
+[node name="DownWall" type="StaticBody2D" parent="." unique_id=1007673278]
+
+[node name="Down" type="CollisionShape2D" parent="DownWall" unique_id=699351196]
+visible = false
+position = Vector2(576, 640)
+shape = SubResource("RectangleShape2D_ps1la")
+
+[node name="LeftWall" type="StaticBody2D" parent="." unique_id=2057085990]
+
+[node name="Left" type="CollisionShape2D" parent="LeftWall" unique_id=1120486463]
+visible = false
+position = Vector2(0, 319)
+shape = SubResource("RectangleShape2D_6aewd")
+
+[node name="RightWall" type="StaticBody2D" parent="." unique_id=728654602]
+
+[node name="Right" type="CollisionShape2D" parent="RightWall" unique_id=388273485]
+visible = false
+position = Vector2(1152, 328)
+shape = SubResource("RectangleShape2D_u2i7p")
+
+[node name="destino1" type="CollisionShape2D" parent="." unique_id=1174353084]
+visible = false
+top_level = true
+position = Vector2(451.75, 111.75)
+shape = SubResource("RectangleShape2D_t2ywm")
+
+[node name="destino2" type="CollisionShape2D" parent="." unique_id=1618167394]
+visible = false
+position = Vector2(672, 112)
+shape = SubResource("RectangleShape2D_0njje")
+
+[node name="destino3" type="CollisionShape2D" parent="." unique_id=323069869]
+visible = false
+position = Vector2(456, 272)
+shape = SubResource("RectangleShape2D_rpv7a")
+
+[node name="destino4" type="CollisionShape2D" parent="." unique_id=1008499360]
+visible = false
+position = Vector2(672, 272)
+shape = SubResource("RectangleShape2D_3d18g")
+
+[node name="canvaV" type="TextureRect" parent="." unique_id=447435002]
+visible = false
+top_level = true
+offset_left = 16.0
+offset_top = 120.0
+offset_right = 1152.0
+offset_bottom = 512.0
+texture = ExtResource("6_h820a")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="canvaF" type="TextureRect" parent="." unique_id=1145716377]
+visible = false
+top_level = true
+offset_top = 128.0
+offset_right = 1160.0
+offset_bottom = 544.0
+texture = ExtResource("7_tskot")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="comprobarB" type="TextureButton" parent="." unique_id=53789488]
+offset_left = 472.0
+offset_top = 416.0
+offset_right = 680.0
+offset_bottom = 493.0
+texture_normal = ExtResource("8_leaul")
+texture_pressed = ExtResource("9_n8hva")
+texture_hover = ExtResource("10_6f0no")
+ignore_texture_size = true
+stretch_mode = 4
+
+[connection signal="pressed" from="comprobarB" to="." method="_on_comprobar_b_pressed"]

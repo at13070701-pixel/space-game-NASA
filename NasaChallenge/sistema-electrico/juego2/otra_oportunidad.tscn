@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://cbosjbt7vifqq"]
+
+[ext_resource type="Texture2D" uid="uid://bhwtpvmwbp704" path="res://Materialnasa/Panel de control espacial retro pixel art.png" id="1_auwf7"]
+
+[node name="otra_oportunidad" type="Control" unique_id=1702370046]
+layout_mode = 3
+anchor_right = 1.0070001
+anchor_bottom = 0.98800004
+offset_right = -0.064086914
+offset_bottom = 7.776001
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Fondo" type="Sprite2D" parent="." unique_id=541402934]
+self_modulate = Color(1, 1, 1, 0.39607844)
+position = Vector2(576, 324.00003)
+scale = Vector2(0.75, 0.63281256)
+texture = ExtResource("1_auwf7")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1741488702]
+layout_mode = 0
+offset_left = 280.0
+offset_top = 80.0
+offset_right = 896.0
+offset_bottom = 480.0
+texture = ExtResource("1_auwf7")
+expand_mode = 1
+stretch_mode = 4
